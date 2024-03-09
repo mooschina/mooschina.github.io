@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	   <meta name="keywordas" content="蜘蛛网">
+	<meta name="keywordas" content="蜘蛛网">
 	<meta name="author" content="蜘蛛网团队">
+	<link rel = "/js.js">
 	<title>蜘蛛网-聊天室</title>
 </head>
 <body style="background-color:#222222" onload="Time()">
@@ -13,29 +14,12 @@
             <tr>
                 <th style="color:white;width:150px;"><b><h2>蜘蛛网</h2></b></th>
                 <th style="width:50px;color:grey"><pre>|</pre></th>
-                <th style="width:100px;"><h3><a href= "/C:\Users\admin\Desktop\蜘蛛网\蜘蛛网.htm" style="text-decoration:none;color:white;">首页</a></h3></th>
-                <th style="width:100px;"><h3><a href= "/C:\Users\admin\Desktop\蜘蛛网\常用网站.htm" style="text-decoration:none;color:white;">常用网站</a></h3></th>
+                <th style="width:100px;"><h3><a href= "/" style="text-decoration:none;color:white;">首页</a></h3></th>
+                <th style="width:100px;"><h3><a href= "聊天室.html" style="text-decoration:none;color:white;">聊天室</a></h3></th>
                 <th style="width:1100px;color:grey"></th>
                 <th>
                 	<center>
-						<big><pre id = "time" style="color:white;width:100px;"></pre></big>
-						<script>
-							function Time()
-							{
-
-								x=document.getElementById("time");  // 找到元素
-								var d=new Date();
-								var y = d.getFullYear();
-								var m = d.getMonth() + 1;
-								var day = d.getDate();
-								var hour = d.getHours();
-								var min = d.getMinutes();
-								var s = d.getSeconds();
-								if (s<=9){s = "0"+s;}
-								if (min<=9){min = "0"+min;}
-								x.innerHTML=y+"年"+m+"月"+day+"日 "+hour+":"+min+":"+s;    // 改变内容
-							}
-						</script>
+			<big><pre id = "time" style="color:white;width:100px;"></pre></big>	
                 </th>
                 <th style="width:100px;"><button type="button" onclick="Time()" style="color:white;background-color:black;border:2px solid;border-radius:25px;">刷新时间</button></th>
             </tr>
