@@ -11,4 +11,5 @@ function Time()
 								if (s<=9){s = "0"+s;}
 								if (min<=9){min = "0"+min;}
 								x.innerHTML=y+"年"+m+"月"+day+"日 "+hour+":"+min+":"+s;    // 改变内容
+								Time();
 							}
